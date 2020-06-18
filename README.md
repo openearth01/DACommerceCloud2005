@@ -1,6 +1,6 @@
 # SAP Commerce Cloud Sample Repository
 
-This sample repository contains the files and folders that are required to set up SAP Commerce Cloud. There are multiple branches covering different scenarios for Commerce Cloud (e.g. project Spartacus, data hub, solr customizations).  You can clone/download this repository, checkout the branch of interest and then follow the instructions in the readme to update the example files with your specific details. 
+This sample repository contains the files and folders that are required to set up SAP Commerce Cloud.  You can clone this repository and then follow the instructions in the readme to update the example files with your specific details. 
 
 When your files are ready, push them to your SAP Commerce Cloud repository.  
 
@@ -26,9 +26,10 @@ The following folders and files are included in the sample repository.
 
 Root level 
 - core-customize folder: The folder that contains all of the folders and files that support Commerce Cloud.
+- js-storefront: A project Spartacus JS Storefront configured with Server Side Rendering (SSR). For more on project Spartacus see [project Spartacus documentation](https://sap.github.io/cloud-commerce-spartacus-storefront-docs/)
 
 core-customize folder
-- manifest.json: The Commerce Cloud manifest.json file, which defines how your code will be built and deployed in the Public Cloud environments. The manifest is set up to leverage [configuration reuse](https://help.sap.com/viewer/1be46286b36a4aa48205be5a96240672/SHIP/en-US/2311d89eef9344fc81ef168ac9668307.html) to better allow for consistency between local and cloud builds.
+- manifest.json: The Commerce Cloud manifest.json file, which defines how your code will be built and deployed in the Public Cloud environments. The manifest is set up to leverage [confiuration reuse](https://help.sap.com/viewer/1be46286b36a4aa48205be5a96240672/SHIP/en-US/2311d89eef9344fc81ef168ac9668307.html) to better allow for consistency between local and cloud builds.
 - hybris folder: contains a sample custom folder for storing any custom extensions as well as the config folder for storing local and cloud properties, localextensions.xml and any local solr/tomcat configurations
 - other sample manifests: A collection of tested and verified manifest files that you can use as starting points for your Commerce Cloud environments.
 
@@ -53,6 +54,9 @@ Clone the sample repository ([instructions can be found here](https://help.githu
 In the sample repository, verify that you have the following files in the core-customize folder.
  - manifest.json:  This is the manifest.json for Commerce Cloud.
  
+ In the sample repository, verify that you have the following files in the js-storefront folder.
+ - manifest.json: This is the file that tells Cloud Automation the name and path of the JavaScript storefronts you want to build and deploy
+
 ### Push the Commerce Cloud Configuration to Code Repository
 
 Push all the contents from your local machine to the root level of your Commerce Cloud repository.
@@ -81,6 +85,19 @@ Use the Cloud Portal to create a build and then deploy the build to an environme
 6. In your browser's address, append the endpoint address with */?site=electronics* and reload the page
 7. Verify that you see a basic electronics storefront.
 
+If you're using the Javascript Storefront ensure the following:
+
+1. After the build is deployed, you can find the 'API' endpoint in the *Environments* page of the Cloud Portal listed under *Public Endpoints*.
+2. Click on the *API* hyperlink to access the details page for endpoint.
+3. Either add an IP Filter Set for your IP address OR change the Base Rule from 'Deny All' to 'Allow All' in order to receive traffic on your APIs
+4. Save the changes.
+5. Repeat the following for the *JS-Storefront* endpoint
+6. Copy the URL of your *API* endpoint into the "baseUrl" property of js-storefront/spartacusstore/src/app/app.module.ts file
+7. Commit your changes, rebuild and deploy
+8. Click on the URL listed next to the *JS-Storefront* public endpoint.
+9. Verify that you see the project Spartacus basic electronics storefront.
+ 
+
 # Limitations
 
 The repository must be a public-facing repository.  You cannot use a private repository to host SAP Commerce Cloud configurations. 
@@ -96,4 +113,6 @@ This repository is provided "as-is"; no support is available.
 Find more information about SAP Commerce Cloud Setup on our [help site](https://help.sap.com/viewer/1be46286b36a4aa48205be5a96240672/SHIP/en-US/76450bc02bdf492689ca5e6d35c670e6.html).
 
 # License
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE file](https://github.wdf.sap.corp/staging-for-SAP-samples-public/cloud-commerce-sample-setup/blob/master/LICENSE).
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved.
+This file is licensed under the “SAP Sample Code License” except as noted otherwise in the [LICENSE file](https://github.wdf.sap.corp/staging-for-SAP-samples-public/cloud-commerce-sample-setup/blob/master/LICENSE).
+
