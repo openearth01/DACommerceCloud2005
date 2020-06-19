@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "2005",
+    "commerceSuiteVersion": "1905",
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",  
@@ -112,6 +112,11 @@
             "template": "yacceleratorstorefront"
         },
         {
+            "addon": "hybrisanalyticsaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
             "addon": "eventtrackingwsaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
@@ -120,6 +125,16 @@
             "addon": "personalizationsearchsamplesaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "acceleratorwebservicesaddon",
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices"
+        },
+        {
+            "addon": "cmsoccaddon",
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices"
         },
         {
             "addon": "personalizationaddon",
@@ -238,8 +253,8 @@
                     "contextPath": "/hac"
                 },
                 {
-                    "name": "commercewebservices",
-                    "contextPath": "/occ"
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
                 },
                 {
                     "name": "yacceleratorstorefront",
