@@ -165,7 +165,7 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "merchandisingmerchandisingstorefrontsampledataaddonaddon",
+            "addon": "merchandisingstorefrontsampledataaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
@@ -380,7 +380,7 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "merchandisingmerchandisingstorefrontsampledataaddonaddon",
+            "addon": "merchandisingstorefrontsampledataaddon",
             "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
