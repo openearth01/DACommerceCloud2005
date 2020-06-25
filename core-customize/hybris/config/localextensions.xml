@@ -154,6 +154,7 @@
     <extension name='personalizationservices' />
     <extension name='personalizationservicesbackoffice' />
     <extension name='personalizationsmartedit' />
+    <extension name='merchandisingmerchandisingstorefrontsampledataaddonaddon' />
     <extension name='personalizationwebservices' />
     <extension name='previewpersonalizationweb' />
     <extension name='personalizationaddon' />
