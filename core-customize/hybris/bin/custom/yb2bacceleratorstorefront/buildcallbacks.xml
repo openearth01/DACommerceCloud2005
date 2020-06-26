@@ -719,7 +719,7 @@
         	
     </macrodef>
     	
-    <macrodef name=yb2bacceleratorstorefront_generate_wro_addons_xml">
+    <macrodef name="yb2bacceleratorstorefront_generate_wro_addons_xml">
         		
         <attribute name="extname"/>
         		
