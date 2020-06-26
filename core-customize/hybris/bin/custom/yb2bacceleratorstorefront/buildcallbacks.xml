@@ -673,7 +673,7 @@
         	
     </macrodef>
     	
-    <macrodef name="delete_wro_addons_xml">
+    <macrodef name="yb2bacceleratorstorefront_delete_wro_addons_xml">
         		
         <sequential>
             			
@@ -693,7 +693,7 @@
         	
     </macrodef>
     	
-    <macrodef name="create_empty_wro_addons_xml">
+    <macrodef name="yb2bacceleratorstorefront_create_empty_wro_addons_xml">
         		
         <sequential>
             			
@@ -719,7 +719,7 @@
         	
     </macrodef>
     	
-    <macrodef name="generate_wro_addons_xml">
+    <macrodef name=yb2bacceleratorstorefront_generate_wro_addons_xml">
         		
         <attribute name="extname"/>
         		
@@ -831,7 +831,7 @@
         	
     </macrodef>
     	
-    <macrodef name="create_wro_addons_xml">
+    <macrodef name="yb2bacceleratorstorefront_create_wro_addons_xml">
         		
         <attribute name="extname"/>
         		
@@ -999,7 +999,7 @@
             
     </macrodef>
     	
-    <macrodef name="fix_root_node_for_wro_addons_xml">
+    <macrodef name="yb2bacceleratorstorefront_fix_root_node_for_wro_addons_xml">
         		
         <sequential>
             			
