@@ -584,7 +584,7 @@
                 {
                     "name": "yb2bacceleratorstorefront",
                     "contextPath": "/yb2bacceleratorstorefront"
-                }
+                },
                 {
                     "name": "smartedit",
                     "contextPath": "/smartedit"
