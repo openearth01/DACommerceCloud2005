@@ -566,10 +566,6 @@
                 {
                     "key": "xss.filter.header.X-Frame-Options",
                     "value": ""
-                },
-                {
-                    "key": "storefrontContextRoot",
-                    "value": "/yacceleratorstorefront"
                 }
             ],
             "webapps": [
@@ -585,6 +581,10 @@
                     "name": "yacceleratorstorefront",
                     "contextPath": "/yacceleratorstorefront"
                 },
+                {
+                    "name": "yb2bacceleratorstorefront",
+                    "contextPath": "/yb2bacceleratorstorefront"
+                }
                 {
                     "name": "smartedit",
                     "contextPath": "/smartedit"
