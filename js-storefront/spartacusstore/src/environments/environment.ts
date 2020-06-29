@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   occBaseUrl:
-    'https://localhost:9002',
+    'https://api.cv1ozbay70-dickinson1-d1-public.model-t.cc.commerce.ondemand.com',
   prefix: '/occ/v2/' 
 };
 
