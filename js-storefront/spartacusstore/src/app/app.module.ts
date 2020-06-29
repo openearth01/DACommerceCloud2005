@@ -32,7 +32,7 @@ else {
     B2cStorefrontModule.withConfig({
       backend: occConfig.backend,
       context: {
-        
+    // commenting these as context needs to be from backend    
         //currency: ['USD'],
         //language: ['en'],
         //baseSite: ['electronics-spa']
