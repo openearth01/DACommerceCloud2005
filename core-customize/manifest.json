@@ -487,6 +487,10 @@
                     "value": "true"
                 },
                 {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
+                },
+                {
                     "key": "spring.session.yacceleratorstorefront.save",
                     "value": "async"
                 },
@@ -559,6 +563,10 @@
                 {
                     "key": "tomcat.maxthreads",
                     "value": "1200"
+                },
+                {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
                 }
             ],
             "webapps": [
