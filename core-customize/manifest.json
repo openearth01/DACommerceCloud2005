@@ -482,14 +482,13 @@
                 "contextPath": "/smartedit"
                 },
                 {
-                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
-                    "value": "/yb2bacceleratorstorefront"
+                    "name": "yacceleratorstorefront",
+                    "contextPath": "/yacceleratorstorefront"
                 },
                 {
-                    "key": "spring.session.yacceleratorstorefront.cookie.path",
-                    "value": "/yacceleratorstorefront"
+                    "name": "yb2bacceleratorstorefront",
+                    "contextPath": "/yb2bacceleratorstorefront"
                 }
-
             ]
         },
         {
