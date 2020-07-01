@@ -476,7 +476,20 @@
                 {
                   "name":"odata2webservices",
                   "contextPath":"/odata2webservices"
-               }
+               },
+               {
+                "name": "smartedit",
+                "contextPath": "/smartedit"
+                },
+                {
+                    "key": "spring.session.yb2bacceleratorstorefront.cookie.path",
+                    "value": "/yb2bacceleratorstorefront"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/yacceleratorstorefront"
+                }
+
             ]
         },
         {
