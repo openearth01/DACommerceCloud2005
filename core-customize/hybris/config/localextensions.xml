@@ -25,10 +25,11 @@
     <extension name='b2bacceleratorfacades' />
     <extension name='b2bacceleratorservices' />
     <!--
+      Commented to switch from 2005 to 1905
     <extension name='b2bocc' />
     <extension name='b2bocctests' />
+    tension name='b2bwebservicescommons' />
     -->
-    <extension name='b2bwebservicescommons' />
     <extension name='commerceorgaddon' />
     <extension name='commerceorgsamplesaddon' />
     <extension name='powertoolsstore' />
