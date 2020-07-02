@@ -24,12 +24,12 @@
     <extension name='b2bacceleratoraddon' />
     <extension name='b2bacceleratorfacades' />
     <extension name='b2bacceleratorservices' />
-    <!--
-      Commented to switch from 2005 to 1905
+  
     <extension name='b2bocc' />
     <extension name='b2bocctests' />
-    tension name='b2bwebservicescommons' />
-    -->
+    <extension name='b2bwebservicescommons' />
+    <extension name='savedorderformsocc' />
+    
     <extension name='commerceorgaddon' />
     <extension name='commerceorgsamplesaddon' />
     <extension name='powertoolsstore' />
@@ -37,7 +37,6 @@
     <extension name='b2bpunchout' />
     <extension name='b2bpunchoutaddon' />
     <extension name='savedorderforms' />
-    <extension name='savedorderformsocc' />
     <extension name='secureportaladdon' />
     <extension name='b2bapprovalprocess' />
     <extension name='b2bapprovalprocessfacades' />
