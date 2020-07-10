@@ -234,5 +234,9 @@
     <extension name='cloudcommons' />
     <extension name='cloudhotfolder' />-->
 
+<!--context driven services extensions has to be installed on the b2c storefront-->
+    <extension name='profiletagaddon' />
+    <extension name='profileservices' /> 
+
   </extensions>
 </hybrisconfig>
