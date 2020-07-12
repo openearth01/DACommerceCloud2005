@@ -156,7 +156,6 @@
     <extension name='personalizationservices' />
     <extension name='personalizationservicesbackoffice' />
     <extension name='personalizationsmartedit' />
-    <extension name='merchandisingstorefrontsampledataaddon' />
     <extension name='personalizationwebservices' />
     <extension name='previewpersonalizationweb' />
     <extension name='personalizationaddon' />
@@ -234,9 +233,19 @@
     <extension name='cloudcommons' />
     <extension name='cloudhotfolder' />-->
 
-<!--context driven services extensions has to be installed on the b2c storefront-->
+<!--context driven services foundation extensions has to be installed on the b2c storefront-->
     <extension name='profiletagaddon' />
     <extension name='profileservices' /> 
+
+
+<!--context driven merchanisiign module extensions has to be installed on the b2c storefront-->
+
+    <extension name='merchandisingaddon' />
+    <extension name='merchandisingcmswebservices' />
+    <extension name='merchandisingservices' />
+    <extension name='merchandisingservicesbackoffice' />
+    <extension name='merchandisingsmartedit' />
+    <extension name='merchandisingstorefrontsampledataaddon' />
 
   </extensions>
 </hybrisconfig>
