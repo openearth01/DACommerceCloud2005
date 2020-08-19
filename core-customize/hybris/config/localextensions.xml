@@ -2,7 +2,7 @@
   <extensions>
     <path
      dir='${HYBRIS_BIN_DIR}' autoload='false' />
-     <extension name='yb2bacceleratorstorefront' />
+    <extension name='yb2bacceleratorstorefront' />
     <extension name='adaptivesearch' />
     <extension name='adaptivesearchbackoffice' />
     <extension name='adaptivesearchfacades' />
@@ -87,7 +87,8 @@
     <extension name='consignmenttrackingfacades' />
     <extension name='consignmenttrackingmock' />
     <extension name='consignmenttrackingocc' />
-    <extension name='consignmenttrackingservices' />
+    <extension name='consignmenttrackingservices' 
+    <extension name='consignmenttrackingoccaddon' />
     <extension name='acceleratorbackoffice' />
     <extension name='acceleratorcms' />
     <extension name='acceleratorfacades' />
@@ -246,6 +247,23 @@
     <extension name='merchandisingservicesbackoffice' />
     <extension name='merchandisingsmartedit' />
     <extension name='merchandisingstorefrontsampledataaddon' />
+
+<!--SAP CPI Extensions -->
+
+    <extension name='sapcoreaddon' /> 
+    <extension name='sapcoreconfigurationbackoffice' /> 
+    <extension name='sapmodelbackoffice' /> 
+    <extension name='sapcustomerb2bbackoffice' /> 
+    <extension name='ysapcpiomsfulfillment' /> 
+    <extension name='ysapomsfulfillment' /> 
+    <extension name='sapcpiadapter' /> 
+    <extension name='sapcpiproductexchange' /> 
+    <extension name='sapcpicustomerexchange' /> 
+    <extension name='sapcpicustomerexchangeb2b' /> 
+    <extension name='sapcpiorderexchangeoms' /> 
+    <extension name='sapcpiorderexchangeomsb2b' /> 
+    <extension name='saporderexchangebackoffice' /> 
+    <extension name='sapcoretest' /> 
 
   </extensions>
 </hybrisconfig>
