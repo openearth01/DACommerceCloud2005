@@ -302,11 +302,6 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "sapcoreaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
             "addon": "accountsummaryaddon",
             "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
@@ -518,11 +513,6 @@
         },
         {
             "addon": "ysapproductconfigaddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "sapcoreaddon",
             "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
