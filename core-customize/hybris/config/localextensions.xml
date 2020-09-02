@@ -1,7 +1,7 @@
 <hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
   <extensions>
     <path
-     dir='${HYBRIS_BIN_DIR}' autoload='false' />
+     dir='${HYBRIS_BIN_DIR}' autoload='false' depth='4'/>
     <extension name='yb2bacceleratorstorefront' />
     <extension name='adaptivesearch' />
     <extension name='adaptivesearchbackoffice' />
