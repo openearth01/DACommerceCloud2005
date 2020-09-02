@@ -248,7 +248,7 @@
     <extension name='merchandisingsmartedit' />
     <extension name='merchandisingstorefrontsampledataaddon' />
 
-<!-- Added SAP CPI Extensions -->
+<!-- Added SAP CPI Extensions 
 
     <extension name='sapcpiadapter' /> 
     <extension name='sapcpicustomerexchange' /> 
@@ -258,7 +258,7 @@
     <extension name='sapcpiorderexchangeomsb2b' /> 
     <extension name='sapcpiproductexchange' /> 
     <extension name='sapcpicustomerexchangeb2b' /> 
-
+-->
 
     
     
