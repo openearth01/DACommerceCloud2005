@@ -367,12 +367,10 @@
                 <regexpmapper from="themes/(.*)" handledirsep="yes" to="theme-\1/css"/>
                 			
             </copy>
-
-           <!-- Commenting out to Resolve Build issue RAVIC   
-
+            			
             <apply dir="${ext.yb2bacceleratorstorefront.path}/web/webroot/WEB-INF/_ui-src/responsive/themes/" executable="java" failonerror="true" force="true" parallel="false">
                 				
-                
+                <!-- Give the input bundle of less files-->
                 				
                 <fileset dir="${ext.yb2bacceleratorstorefront.path}/web/webroot/WEB-INF/_ui-src/responsive/themes/">
                     					
@@ -392,15 +390,14 @@
                 				
                 <srcfile/>
                 				
-                
+                <!-- Output the compiled css file with corresponding name -->
                 				
                 <regexpmapper from="(.*)/less/(.*)\.less$$" handledirsep="yes" to="${ext.yb2bacceleratorstorefront.mapperToPath}/web/webroot/_ui/responsive/theme-\1/css/\2.css"/>
                 				
                 <targetfile/>
                 			
             </apply>
-
-             -->   	
+            		
         </sequential>
         	
     </macrodef>
