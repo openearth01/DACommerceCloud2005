@@ -132,6 +132,11 @@
             "template": "yacceleratorstorefront"
         },
         {
+            "addon": "daaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
             "addon": "smarteditaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
