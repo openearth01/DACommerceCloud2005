@@ -1,8 +1,8 @@
 <hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
   <extensions>
     <path
-     dir='${HYBRIS_BIN_DIR}' autoload='false' />
-     <extension name='yb2bacceleratorstorefront' />
+     dir='${HYBRIS_BIN_DIR}' autoload='false' depth='4'/>
+    <extension name='yb2bacceleratorstorefront' />
     <extension name='adaptivesearch' />
     <extension name='adaptivesearchbackoffice' />
     <extension name='adaptivesearchfacades' />
@@ -88,6 +88,7 @@
     <extension name='consignmenttrackingmock' />
     <extension name='consignmenttrackingocc' />
     <extension name='consignmenttrackingservices' />
+    <extension name='consignmenttrackingoccaddon' />
     <extension name='acceleratorbackoffice' />
     <extension name='acceleratorcms' />
     <extension name='acceleratorfacades' />
@@ -246,6 +247,26 @@
     <extension name='merchandisingservicesbackoffice' />
     <extension name='merchandisingsmartedit' />
     <extension name='merchandisingstorefrontsampledataaddon' />
+
+      <!-- Custom Add on -->
+
+    <extension name='daaddon' />
+
+
+<!-- Added SAP CPI Extensions 
+
+    <extension name='sapcpiadapter' /> 
+    <extension name='sapcpicustomerexchange' /> 
+    <extension name='sapcpiorderexchange' /> 
+    <extension name='sapcpiorderexchangeb2b' /> 
+    <extension name='sapcpiorderexchangeoms' /> 
+    <extension name='sapcpiorderexchangeomsb2b' /> 
+    <extension name='sapcpiproductexchange' /> 
+    <extension name='sapcpicustomerexchangeb2b' /> 
+-->
+
+    
+    
 
   </extensions>
 </hybrisconfig>
