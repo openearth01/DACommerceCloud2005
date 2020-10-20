@@ -10,8 +10,6 @@ import de.hybris.platform.acceleratorstorefrontcommons.constants.WebConstants;
 import de.hybris.platform.acceleratorstorefrontcommons.controllers.pages.AbstractPageController;
 import de.hybris.platform.acceleratorstorefrontcommons.controllers.util.GlobalMessages;
 import de.hybris.platform.acceleratorstorefrontcommons.forms.FutureStockForm;
-import de.hybris.platform.acceleratorstorefrontcommons.forms.ReviewForm;
-import de.hybris.platform.acceleratorstorefrontcommons.forms.validation.ReviewValidator;
 import de.hybris.platform.acceleratorstorefrontcommons.util.MetaSanitizerUtil;
 import de.hybris.platform.acceleratorstorefrontcommons.util.XSSFilterUtil;
 import de.hybris.platform.acceleratorstorefrontcommons.variants.VariantSortStrategy;
@@ -67,6 +65,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.da.custom.captcha.CaptchaService;
 import com.google.common.collect.Maps;
 import com.hybris.da.controllers.ControllerConstants;
+import com.hybris.da.forms.ReviewForm;
+import com.hybris.da.forms.ReviewValidator;
 
 
 /**
@@ -115,8 +115,8 @@ public class ProductPageController extends AbstractPageController
 	@Resource(name = "variantSortStrategy")
 	private VariantSortStrategy variantSortStrategy;
 
-	@Resource(name = "reviewValidator")
-	private ReviewValidator reviewValidator;
+	@Resource(name = "dareviewValidator")
+	private ReviewValidator dareviewValidator;
 
 	@Resource(name = "futureStockFacade")
 	private FutureStockFacade futureStockFacade;
@@ -223,7 +223,8 @@ public class ProductPageController extends AbstractPageController
 
 	@RequestMapping(value = PRODUCT_CODE_PATH_VARIABLE_PATTERN + "/review", method =
 	{ RequestMethod.GET, RequestMethod.POST }) //NOSONAR
-	public String postReview(@PathVariable("productCode") final String encodedProductCode, final ReviewForm form,
+	public String postReview(@PathVariable("productCode")
+	final String encodedProductCode, final ReviewForm form,
 			final BindingResult result, final Model model, final HttpServletRequest request, final RedirectAttributes redirectAttrs)
 			throws CMSItemNotFoundException
 	{
@@ -317,7 +318,8 @@ public class ProductPageController extends AbstractPageController
 	}
 
 	@RequestMapping(value = PRODUCT_CODE_PATH_VARIABLE_PATTERN + "/writeReview", method = RequestMethod.POST)
-	public String writeReview(@PathVariable("productCode") final String encodedProductCode, final ReviewForm form,
+	public String writeReview(@PathVariable("productCode")
+	final String encodedProductCode, final ReviewForm form,
 			final BindingResult result, final Model model, final HttpServletRequest request, final RedirectAttributes redirectAttrs)
 			throws CMSItemNotFoundException
 	{
@@ -534,7 +536,7 @@ public class ProductPageController extends AbstractPageController
 
 	protected ReviewValidator getReviewValidator()
 	{
-		return reviewValidator;
+		return dareviewValidator;
 	}
 
 	protected AbstractPageModel getPageForProduct(final String productCode) throws CMSItemNotFoundException
