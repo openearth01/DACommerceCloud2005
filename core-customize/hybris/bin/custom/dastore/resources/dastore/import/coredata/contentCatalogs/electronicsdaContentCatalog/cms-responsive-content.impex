@@ -814,7 +814,7 @@ INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTe
 ;;multiStepCheckoutSummaryPage;Multi Checkout Summary Page;MultiStepCheckoutSummaryPageTemplate;multiStepCheckoutSummary
 ;;orderConfirmationPage;Order Confirmation Page;OrderConfirmationPageTemplate;orderConfirmation
 ;;cartPage;Cart Page;CartPageTemplate;cart
-;;search;Search Results Page;SearchResultsListPageTemplate;search
+;;search;Search Results Page;SearchResultsGridPageTemplate;search
 ;;address-book;Address Book Page;AccountPageTemplate;address-book
 ;;add-edit-address;Add Edit Address Page;AccountPageTemplate;add-edit-address
 ;;payment-details;Payment Details Page;AccountPageTemplate;payment-details
@@ -847,8 +847,8 @@ INSERT_UPDATE ProductPage;$contentCV[unique=true];uid[unique=true];name;masterTe
 
 # Category Pages
 INSERT_UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);defaultPage;approvalStatus(code)[default='approved']
-;;productList;Product List;ProductListPageTemplate;true;
-;;productGrid;Product Grid;ProductGridPageTemplate;false;
+;;productList;Product List;ProductListPageTemplate;false;
+;;productGrid;Product Grid;ProductGridPageTemplate;true;
 ;;category;Default Category Page;CategoryPageTemplate;false;
 
 ############################## above is the desktop data, below is the responsive data ###########################################

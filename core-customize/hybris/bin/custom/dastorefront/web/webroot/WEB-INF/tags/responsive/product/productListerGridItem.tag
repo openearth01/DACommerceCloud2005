@@ -64,7 +64,7 @@
 		<c:set var="addToCartUrl" value="${addToCartUrl}" scope="request"/>
 		<c:set var="isGrid" value="true" scope="request"/>
 		<div class="addtocart">
-			<div class="actions-container-for-${fn:escapeXml(component.uid)} <c:if test="${ycommerce:checkIfPickupEnabledForStore() and product.availableForPickup}"> pickup-in-store-available</c:if>">
+			<div class="actions-container-for-${fn:escapeXml(component.uid)}" >  
 				<action:actions element="div" parentComponent="${component}"/>
 			</div>
 		</div>
