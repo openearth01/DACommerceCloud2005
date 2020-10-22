@@ -19,7 +19,7 @@ $productResource=jar:com.da.dastore.constants.DastoreConstants&/dastore/import/s
 
 # CMS Site Settings
 UPDATE CMSSite;uid[unique=true];defaultPreviewCategory(code, $productCV);defaultPreviewProduct(code, $productCV);defaultPreviewCatalog(id)
-;electronics;575;2053367;$productCatalog
+;electronicsda;575;2053367;$productCatalog
 
 # Site Logo
 INSERT_UPDATE Media;$contentCV[unique=true];code[unique=true];realfilename;@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];altText;folder(qualifier)[default='images']
@@ -824,7 +824,7 @@ INSERT_UPDATE JspIncludeComponent;$contentCV[unique=true];uid[unique=true];actio
 ;;StoreFinderComponent;;
 ###### Update the Camera and Accessories Category Page #####
 INSERT_UPDATE CategoryPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);defaultPage;approvalStatus(code)[default='approved'];previewImage(code, $contentCV)
-;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies Category Page;ProductListPageTemplate;false;;CameraAccessoriesPagePreview
+;;CamerasAccessoriesAndSuppliesCategoryPage;Cameras Accessories & Supplies Category Page;ProductGridPageTemplate;false;;CameraAccessoriesPagePreview
 
 
 ##### End Update the Camera and Accessories Category Page #####
