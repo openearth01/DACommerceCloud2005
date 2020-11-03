@@ -495,11 +495,6 @@
             "template": "yacceleratorstorefront"
         },
         {
-            "addon": "sapcoreaddon",
-            "storefront": "yb2bacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
             "addon": "accountsummaryaddon",
             "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
