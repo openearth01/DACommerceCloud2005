@@ -13,19 +13,7 @@
         "integrationmonitoringbackoffice",
         "outboundsyncbackoffice",
         "cloudmediaconversion",  
-        "mediaconversionbackoffice",
-        "sapcoreaddon",
-        "sapcoreconfigurationbackoffice",
-        "sapmodelbackoffice",
-        "sapcustomerb2bbackoffice",
-        "ysapcpiomsfulfillment",
-        "sapcpiadapter",
-        "sapcpicustomerexchange",
-        "sapcpicustomerexchangeb2b",
-        "sapcpiorderexchangeoms",
-        "sapcpiorderexchangeomsb2b",
-        "saporderexchangebackoffice",
-        "sapcpiproductexchange"
+        "mediaconversionbackoffice"
     ],
     
     "useConfig": {
