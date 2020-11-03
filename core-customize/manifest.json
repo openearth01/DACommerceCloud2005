@@ -3,8 +3,29 @@
     "commerceSuiteVersion": "2005",
     "enableImageProcessingService": true,
     "extensions": [
+        "odata2webservices",
+        "integrationservices",
+        "odata2services",
+        "integrationbackoffice",
+        "inboundservices",
+        "outboundservices",
+        "outboundsync",
+        "integrationmonitoringbackoffice",
+        "outboundsyncbackoffice",
         "cloudmediaconversion",  
-        "mediaconversionbackoffice"
+        "mediaconversionbackoffice",
+        "sapcoreaddon",
+        "sapcoreconfigurationbackoffice",
+        "sapmodelbackoffice",
+        "sapcustomerb2bbackoffice",
+        "ysapcpiomsfulfillment",
+        "sapcpiadapter",
+        "sapcpicustomerexchange",
+        "sapcpicustomerexchangeb2b",
+        "sapcpiorderexchangeoms",
+        "sapcpiorderexchangeomsb2b",
+        "saporderexchangebackoffice",
+        "sapcpiproductexchange"
     ],
     
     "useConfig": {
@@ -123,6 +144,11 @@
     "storefrontAddons": [
         {
             "addon": "spartacussampledataaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "sapcoreaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
@@ -304,6 +330,11 @@
         {
             "addon": "ysapproductconfigaddon",
             "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "sapcoreaddon",
+            "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
