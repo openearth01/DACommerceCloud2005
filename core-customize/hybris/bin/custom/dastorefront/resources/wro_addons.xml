@@ -4,9 +4,6 @@
    <group name="addons_responsive">
       <js>/_ui/addons/adaptivesearchsamplesaddon/responsive/common/js/adaptivesearchsamplesaddon.js</js>
       <css>/_ui/addons/adaptivesearchsamplesaddon/responsive/common/css/adaptivesearchsamplesaddon.css</css>
-      <js>/_ui/addons/commerceorgaddon/responsive/common/js/commerceorgnavigation.js</js>
-      <js>/_ui/addons/commerceorgaddon/responsive/common/js/commerceorgaddon.js</js>
-      <js>/_ui/addons/commerceorgaddon/responsive/common/js/jquery.validate.js</js>
       <js>/_ui/addons/configurablebundleaddon/responsive/common/js/configurablebundleaddon.js</js>
       <css>/_ui/addons/configurablebundleaddon/responsive/common/css/configurablebundleaddon.css</css>
       <css>/_ui/addons/notificationaddon/responsive/common/css/notificationaddon.css</css>
@@ -19,18 +16,8 @@
       <css>/_ui/addons/profiletagaddon/responsive/common/css/profiletagaddon.css</css>
       <js>/_ui/addons/merchandisingaddon/responsive/common/js/merchandisingaddon.js</js>
       <css>/_ui/addons/merchandisingaddon/responsive/common/css/merchandisingaddon.css</css>
-      <js>/_ui/addons/spartacussampledataaddon/responsive/common/js/spartacussampledataaddon.js</js>
-      <css>/_ui/addons/spartacussampledataaddon/responsive/common/css/spartacussampledataaddon.css</css>
       <js>/_ui/addons/textfieldconfiguratortemplateaddon/responsive/common/js/textfieldconfiguratortemplateaddon.js</js>
       <css>/_ui/addons/textfieldconfiguratortemplateaddon/responsive/common/css/textfieldconfiguratortemplateaddon.css</css>
-      <js>/_ui/addons/accountsummaryaddon/responsive/common/js/acc.accountsummary.js</js>
-      <js>/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.checkoutsummary.js</js>
-      <js>/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.paymentType.js</js>
-      <js>/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.replenishment.js</js>
-      <js>/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.orderform.js</js>
-      <js>/_ui/addons/b2bacceleratoraddon/responsive/common/js/acc.approval.js</js>
-      <js>/_ui/addons/b2bpunchoutaddon/responsive/common/js/acc.punchout.js</js>
-      <js>/_ui/addons/secureportaladdon/responsive/common/js/secureportaladdon.js</js>
       <js>/_ui/addons/captchaaddon/responsive/common/js/captchaaddon.js</js>
       <js>/_ui/addons/consignmenttrackingaddon/responsive/common/js/consignmenttrackingaddon.js</js>
       <css>/_ui/addons/consignmenttrackingaddon/responsive/common/css/consignmenttrackingaddon.css</css>
