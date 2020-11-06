@@ -3,6 +3,15 @@
     "commerceSuiteVersion": "2005",
     "enableImageProcessingService": true,
     "extensions": [
+        "odata2webservices",
+        "integrationservices",
+        "odata2services",
+        "integrationbackoffice",
+        "inboundservices",
+        "outboundservices",
+        "outboundsync",
+        "integrationmonitoringbackoffice",
+        "outboundsyncbackoffice",
         "cloudmediaconversion",  
         "mediaconversionbackoffice"
     ],
