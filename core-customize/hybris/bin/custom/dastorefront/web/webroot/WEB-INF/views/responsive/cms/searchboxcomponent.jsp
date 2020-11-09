@@ -1,5 +1,4 @@
 <%@ page trimDirectiveWhitespaces="true"%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags"%>
@@ -53,10 +52,8 @@
 <script type="text/javascript">
 var inputform = document.getElementById('search-form1');
 var searchFormInput = inputform.elements['text'];
-
 // The speech recognition interface lives on the browsers window object
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition; // if none exists -> undefined
-
 if(SpeechRecognition) {
   console.log("Your Browser supports speech Recognition");
   
@@ -65,7 +62,6 @@ if(SpeechRecognition) {
   // recognition.lang = "en-US";
 	
   searchFormInput.style.paddingRight = "50px";
-
   const micBtn = document.getElementById('speech');
   const micIcon = micBtn.firstElementChild;
   
@@ -78,21 +74,18 @@ if(SpeechRecognition) {
       recognition.stop();
     }
   }
-
   recognition.addEventListener("start", startSpeechRecognition); // <=> recognition.onstart = function() {...}
   function startSpeechRecognition() {
     micIcon.classList.add("Blink");
     searchFormInput.focus();
     console.log("Voice activated, SPEAK");
   }
-
   recognition.addEventListener("end", endSpeechRecognition); // <=> recognition.onend = function() {...}
   function endSpeechRecognition() {
     micIcon.classList.remove("Blink");
     searchFormInput.focus();
     console.log("Speech recognition service disconnected");
   }
-
   recognition.addEventListener("result", resultOfSpeechRecognition); // <=> recognition.onresult = function(event) {...} - Fires when you stop talking
   function resultOfSpeechRecognition(event) {
     const current = event.resultIndex;
@@ -119,7 +112,6 @@ if(SpeechRecognition) {
         searchFormInput.value = transcript;
         searchFormInput.focus();
         inputform.submit();
-
       }
     }
   }   
@@ -130,6 +122,3 @@ else {
   element.parentNode.removeChild(element);
 }
 </script>
-
-
-
