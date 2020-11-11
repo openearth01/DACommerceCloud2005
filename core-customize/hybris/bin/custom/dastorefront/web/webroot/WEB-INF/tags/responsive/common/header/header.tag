@@ -8,7 +8,8 @@
 <%@ taglib prefix="ycommerce" uri="http://hybris.com/tld/ycommercetags"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 <%@ taglib prefix="nav" tagdir="/WEB-INF/tags/responsive/nav"%>
-
+ <script src="https://cdn.cai.tools.sap/webchat/webchat.js" channelId="2d526461-4f5a-4acc-9c6f-0ae1a5ca8dbf" token="36f2fed63e5a61b9393c032247181dba" apiRoot="https://dacloudfoundry.sapcai.eu10.hana.ondemand.com/public/api" id="cai-webchat"> 
+</script> 
 <spring:htmlEscape defaultHtmlEscape="true" />
 
 <cms:pageSlot position="TopHeaderSlot" var="component" element="div" >
