@@ -1,17 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
+import { environment } from '../environments/environment';
 import { OccConfig } from '@spartacus/core';
-import { environment } from './../environments/environment';
 
 const occConfig: OccConfig = { backend: { occ: {} } };
-
-// only provide the `occ.baseUrl` key if it is explicitly configured, otherwise the value of
-// <meta name="occ-backend-base-url" > is ignored.
-// This in turn breaks the call to the API aspect in public cloud environments
 if (environment.occBaseUrl) {
   occConfig.backend.occ.baseUrl = environment.occBaseUrl;
 }
@@ -22,20 +18,24 @@ else {
   occConfig.backend.occ.prefix = '/occ/v2/';
 }
 
-
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     B2cStorefrontModule.withConfig({
-      backend: occConfig.backend,
+      backend: {
+        occ: {
+        
+         baseUrl: occConfig.backend.occ.baseUrl,
+          prefix: occConfig.backend.occ.prefix
+        }
+      },
       context: {
-    // commenting these as context needs to be from backend     
-        //currency: ['USD'],
-        //language: ['en'],
-        baseSite: ['electronics-spa','apparel-uk-spa' ]
+        urlParameters: ['baseSite', 'language', 'currency'],
+        baseSite: ['electronicsda-spa'],
+        currency: ['USD', 'JPY']
       },
       i18n: {
         resources: translations,
@@ -43,9 +43,10 @@ else {
         fallbackLang: 'en'
       },
       features: {
-        level: '2.0'
+        level: '2.1'
       }
     }),
+    BrowserTransferStateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
