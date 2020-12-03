@@ -6,6 +6,8 @@ import { translations, translationChunksConfig } from '@spartacus/assets';
 import { B2cStorefrontModule } from '@spartacus/storefront';
 import { environment } from '../environments/environment';
 import { OccConfig } from '@spartacus/core';
+import { ThreekitPdpModule } from './threekit-pdp/threekit-pdp.module';
+
 
 const occConfig: OccConfig = { backend: { occ: {} } };
 if (environment.occBaseUrl) {
@@ -47,8 +49,11 @@ else {
       }
     }),
     BrowserTransferStateModule,
+    ThreekitPdpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
