@@ -9,16 +9,12 @@ import { CmsComponent, CmsConfig, ConfigModule } from '@spartacus/core';
   declarations: [ThreekitImageCompComponent],
   imports: [
     CommonModule/*,
-    ConfigModule.withConfig({
+   ConfigModule.withConfig({
       cmsComponents: {
-        /*ProductImagesComponent:{
-          component: ThreekitImageCompComponent*/
-       /* }
-        /*,
-        ProductIntroComponent:{
+        ProductImagesComponent:{
           component: ThreekitImageCompComponent
-        }*/
-      /*}
+        }
+      }
     } as CmsConfig)*/
   ]
 })

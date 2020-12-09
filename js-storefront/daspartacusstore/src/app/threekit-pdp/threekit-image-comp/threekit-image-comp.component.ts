@@ -1,7 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { CurrentProductService } from '@spartacus/storefront';
-import { Product } from '@spartacus/core';
+import { Product, ProductScope, ProductService  } from '@spartacus/core';
 
 declare function getAssetId(SKU): any;
 @Component({
@@ -10,16 +10,20 @@ declare function getAssetId(SKU): any;
   styleUrls: ['./threekit-image-comp.component.scss']
 })
 export class ThreekitImageCompComponent implements OnInit {
-  product$: Observable<Product> = this.currentProductService.getProduct();
-  constructor(private currentProductService: CurrentProductService) { }
+ product$: Observable<Product> = this.currentProductService.getProduct();
+ sub: any;
+ productid: String = "" ;
+  constructor(private currentProductService: CurrentProductService) { 
+
+  }
 
   ngOnInit(): void {
-    
-
-    console.log("Executing");
-   
-    getAssetId("12345");
-   
+    this.sub = this.product$.subscribe(product => {
+      getAssetId(product.code);
+    })
+  }
+  ngOnDestroy() {
+    this.sub?.unsubscribe();
   }
 
 }

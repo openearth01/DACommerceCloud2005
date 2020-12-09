@@ -110,7 +110,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 },
                 context: {
                     urlParameters: ['baseSite', 'language', 'currency'],
-                    baseSite: ['electronicsda-spa'],
+                    baseSite: ['electronics-spa'],
                     currency: ['USD', 'JPY']
                 },
                 i18n: {
@@ -144,7 +144,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                         },
                         context: {
                             urlParameters: ['baseSite', 'language', 'currency'],
-                            baseSite: ['electronicsda-spa'],
+                            baseSite: ['electronics-spa'],
                             currency: ['USD', 'JPY']
                         },
                         i18n: {
@@ -179,25 +179,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThreekitImageCompComponent", function() { return ThreekitImageCompComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _spartacus_storefront__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @spartacus/storefront */ "./node_modules/@spartacus/storefront/__ivy_ngcc__/fesm2015/spartacus-storefront.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
 
+
+function ThreekitImageCompComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} }
 class ThreekitImageCompComponent {
     constructor(currentProductService) {
         this.currentProductService = currentProductService;
         this.product$ = this.currentProductService.getProduct();
+        this.productid = "";
     }
     ngOnInit() {
-        console.log("Executing");
-        getAssetId("12345");
+        this.sub = this.product$.subscribe(product => {
+            getAssetId(product.code);
+        });
+    }
+    ngOnDestroy() {
+        var _a;
+        (_a = this.sub) === null || _a === void 0 ? void 0 : _a.unsubscribe();
     }
 }
 ThreekitImageCompComponent.ɵfac = function ThreekitImageCompComponent_Factory(t) { return new (t || ThreekitImageCompComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_spartacus_storefront__WEBPACK_IMPORTED_MODULE_1__["CurrentProductService"])); };
-ThreekitImageCompComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ThreekitImageCompComponent, selectors: [["app-threekit-image-comp"]], decls: 2, vars: 0, consts: [["id", "app", 2, "width", "98%", "margin-left", "auto", "margin-right", "auto"], ["id", "player", 2, "width", "100%", "height", "300px"]], template: function ThreekitImageCompComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: [".player___25Zg2[_ngcontent-%COMP%] {\n  float: left;\n  width: 50%;\n  height: 280px;\n}\n\n.configurator___26HkM[_ngcontent-%COMP%] {\n  float: right;\n  width: 50%;\n  height: 280px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhyZWVraXQtcGRwL3RocmVla2l0LWltYWdlLWNvbXAvQzpcXGdpdF9jY3YyXFxEQUNvbW1lcmNlQ2xvdWQyMDA1XFxqcy1zdG9yZWZyb250XFxkYXNwYXJ0YWN1c3N0b3JlL3NyY1xcYXBwXFx0aHJlZWtpdC1wZHBcXHRocmVla2l0LWltYWdlLWNvbXBcXHRocmVla2l0LWltYWdlLWNvbXAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3RocmVla2l0LXBkcC90aHJlZWtpdC1pbWFnZS1jb21wL3RocmVla2l0LWltYWdlLWNvbXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBRUEsVUFBQTtFQUNBLGFBQUE7QUNBSjs7QURFQTtFQUNJLFlBQUE7RUFFQSxVQUFBO0VBQ0EsYUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvdGhyZWVraXQtcGRwL3RocmVla2l0LWltYWdlLWNvbXAvdGhyZWVraXQtaW1hZ2UtY29tcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wbGF5ZXJfX18yNVpnMnsgXHJcbiAgICBmbG9hdDpsZWZ0OyAgXHJcbiAgIC8vIGJhY2tncm91bmQ6UmVkOyBcclxuICAgIHdpZHRoOjUwJTsgXHJcbiAgICBoZWlnaHQ6MjgwcHg7IFxyXG59IFxyXG4uY29uZmlndXJhdG9yX19fMjZIa017IFxyXG4gICAgZmxvYXQ6cmlnaHQ7IFxyXG4gICAvLyBiYWNrZ3JvdW5kOmJsdWU7IFxyXG4gICAgd2lkdGg6NTAlOyBcclxuICAgIGhlaWdodDoyODBweDsgXHJcbn0gIiwiLnBsYXllcl9fXzI1WmcyIHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHdpZHRoOiA1MCU7XG4gIGhlaWdodDogMjgwcHg7XG59XG5cbi5jb25maWd1cmF0b3JfX18yNkhrTSB7XG4gIGZsb2F0OiByaWdodDtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiAyODBweDtcbn0iXX0= */"] });
+ThreekitImageCompComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ThreekitImageCompComponent, selectors: [["app-threekit-image-comp"]], decls: 2, vars: 3, consts: [[4, "ngIf"], ["id", "app", 2, "width", "98%", "margin-left", "auto", "margin-right", "auto"], ["id", "player", 2, "width", "100%", "height", "300px"]], template: function ThreekitImageCompComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, ThreekitImageCompComponent_ng_container_0_Template, 3, 0, "ng-container", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 1, ctx.product$));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["AsyncPipe"]], styles: [".player___25Zg2[_ngcontent-%COMP%] {\n  float: left;\n  width: 50%;\n  height: 280px;\n}\n\n.configurator___26HkM[_ngcontent-%COMP%] {\n  float: right;\n  width: 50%;\n  height: 280px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGhyZWVraXQtcGRwL3RocmVla2l0LWltYWdlLWNvbXAvQzpcXGdpdF9jY3YyXFxEQUNvbW1lcmNlQ2xvdWQyMDA1XFxqcy1zdG9yZWZyb250XFxkYXNwYXJ0YWN1c3N0b3JlL3NyY1xcYXBwXFx0aHJlZWtpdC1wZHBcXHRocmVla2l0LWltYWdlLWNvbXBcXHRocmVla2l0LWltYWdlLWNvbXAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3RocmVla2l0LXBkcC90aHJlZWtpdC1pbWFnZS1jb21wL3RocmVla2l0LWltYWdlLWNvbXAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBRUEsVUFBQTtFQUNBLGFBQUE7QUNBSjs7QURFQTtFQUNJLFlBQUE7RUFFQSxVQUFBO0VBQ0EsYUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvdGhyZWVraXQtcGRwL3RocmVla2l0LWltYWdlLWNvbXAvdGhyZWVraXQtaW1hZ2UtY29tcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wbGF5ZXJfX18yNVpnMnsgXHJcbiAgICBmbG9hdDpsZWZ0OyAgXHJcbiAgIC8vIGJhY2tncm91bmQ6UmVkOyBcclxuICAgIHdpZHRoOjUwJTsgXHJcbiAgICBoZWlnaHQ6MjgwcHg7IFxyXG59IFxyXG4uY29uZmlndXJhdG9yX19fMjZIa017IFxyXG4gICAgZmxvYXQ6cmlnaHQ7IFxyXG4gICAvLyBiYWNrZ3JvdW5kOmJsdWU7IFxyXG4gICAgd2lkdGg6NTAlOyBcclxuICAgIGhlaWdodDoyODBweDsgXHJcbn0gIiwiLnBsYXllcl9fXzI1WmcyIHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHdpZHRoOiA1MCU7XG4gIGhlaWdodDogMjgwcHg7XG59XG5cbi5jb25maWd1cmF0b3JfX18yNkhrTSB7XG4gIGZsb2F0OiByaWdodDtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiAyODBweDtcbn0iXX0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ThreekitImageCompComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -232,48 +248,35 @@ class ThreekitPdpModule {
 ThreekitPdpModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: ThreekitPdpModule });
 ThreekitPdpModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function ThreekitPdpModule_Factory(t) { return new (t || ThreekitPdpModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"] /*,
-            ConfigModule.withConfig({
+           ConfigModule.withConfig({
               cmsComponents: {
-                /*ProductImagesComponent:{
-                  component: ThreekitImageCompComponent*/
-            /* }
-             /*,
-             ProductIntroComponent:{
-               component: ThreekitImageCompComponent
-             }*/
-            /*}
-          } as CmsConfig)*/
+                ProductImagesComponent:{
+                  component: ThreekitImageCompComponent
+                }
+              }
+            } as CmsConfig)*/
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](ThreekitPdpModule, { declarations: [_threekit_image_comp_threekit_image_comp_component__WEBPACK_IMPORTED_MODULE_2__["ThreekitImageCompComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"] /*,
-        ConfigModule.withConfig({
+       ConfigModule.withConfig({
           cmsComponents: {
-            /*ProductImagesComponent:{
-              component: ThreekitImageCompComponent*/
-        /* }
-         /*,
-         ProductIntroComponent:{
-           component: ThreekitImageCompComponent
-         }*/
-        /*}
-      } as CmsConfig)*/
-    ] }); })();
+            ProductImagesComponent:{
+              component: ThreekitImageCompComponent
+            }
+          }
+        } as CmsConfig)*/] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ThreekitPdpModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
                 declarations: [_threekit_image_comp_threekit_image_comp_component__WEBPACK_IMPORTED_MODULE_2__["ThreekitImageCompComponent"]],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"] /*,
-                    ConfigModule.withConfig({
+                   ConfigModule.withConfig({
                       cmsComponents: {
-                        /*ProductImagesComponent:{
-                          component: ThreekitImageCompComponent*/
-                    /* }
-                     /*,
-                     ProductIntroComponent:{
-                       component: ThreekitImageCompComponent
-                     }*/
-                    /*}
-                  } as CmsConfig)*/
+                        ProductImagesComponent:{
+                          component: ThreekitImageCompComponent
+                        }
+                      }
+                    } as CmsConfig)*/
                 ]
             }]
     }], null, null); })();
