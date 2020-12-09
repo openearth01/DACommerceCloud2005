@@ -1,3 +1,6 @@
-<div id="app" style="width: 98%; margin-left: auto; margin-right: auto;">
-    <div id="player" style="width: 100%; height: 300px;"></div>
-</div>
+<ng-container *ngIf="product$ | async as product">
+    <div id="app" style="width: 98%; margin-left: auto; margin-right: auto;">
+        <div id="player" style="width: 100%; height: 300px;"></div>
+    </div>
+</ng-container>
+

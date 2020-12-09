@@ -1,9 +1,6 @@
 {
     "applications": [
-        {
-            "name": "spartacusstore",
-            "path": "spartacusstore"
-        },
+       
 		{
             "name": "daspartacusstore",
             "path": "daspartacusstore"
