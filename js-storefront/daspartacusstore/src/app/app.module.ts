@@ -36,7 +36,7 @@ else {
       },
       context: {
         urlParameters: ['baseSite', 'language', 'currency'],
-        baseSite: ['electronics-spa'],
+        baseSite: ['electronicsda-spa'],
         currency: ['USD', 'JPY']
       },
       i18n: {
