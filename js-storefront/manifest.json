@@ -4,6 +4,10 @@
 		{
             "name": "daspartacusstore",
             "path": "daspartacusstore"
+        },
+		{
+            "name": "spartacusstore",
+            "path": "spartacusstore"
         }
     ],
         "nodeVersion": "12"
