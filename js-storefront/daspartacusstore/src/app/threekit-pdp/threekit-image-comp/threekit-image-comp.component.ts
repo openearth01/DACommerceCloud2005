@@ -1,9 +1,10 @@
 import { Component,OnInit } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { CurrentProductService } from '@spartacus/storefront';
-import { Product, ProductScope, ProductService  } from '@spartacus/core';
+import { Product } from '@spartacus/core';
 
-declare function getAssetId(SKU): any;
+declare function getAssetId(SKU: any): any;
+declare function threekit_pdp(id: any): any;
 @Component({
   selector: 'app-threekit-image-comp',
   templateUrl: './threekit-image-comp.component.html',
@@ -16,10 +17,9 @@ export class ThreekitImageCompComponent implements OnInit {
   constructor(private currentProductService: CurrentProductService) { 
 
   }
-
   ngOnInit(): void {
     this.sub = this.product$.subscribe(product => {
-      getAssetId(product.code);
+      this.productid = getAssetId(product.code);
     })
   }
   ngOnDestroy() {
