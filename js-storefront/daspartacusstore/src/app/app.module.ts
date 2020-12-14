@@ -35,9 +35,9 @@ else {
         }
       },
       context: {
-        urlParameters: ['baseSite', 'language', 'currency'],
-        baseSite: ['electronicsda-spa'],
-        currency: ['USD', 'JPY']
+        //urlParameters: ['baseSite', 'language', 'currency'],
+        baseSite: ['electronicsda-spa']
+       // currency: ['USD', 'JPY']
       },
       i18n: {
         resources: translations,
